@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+h1 , h2 , h3 , p , div , nav ,header {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    max-width:980px;
+    margin: auto;
+}
+ :root{
+    --main-color:black;
+    --secondary-color:blue;
+}
+header nav .logo {
+    color: var(--main-color);
+    font-family: 'Courier Prime', monospace;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+}
+/*.main-logo img{
+    width:100%;
+    height: auto;
+}*/
+.main-logo img {
+    width:70px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+header nav .main-logo{
+    display: flex;
+    justify-content: center;
+    /*background: yellowgreen;*/
+    align-items: center;
+    text-decoration: none;
+    
+}
+header nav .menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px;
+}
+header nav .menu li {
+    display: inline;
+    list-style: none;
+    border-right: 1px solid rgb(148, 148, 158);
+}
+header nav .menu li a {
+    color:rgb(148, 148, 158);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+header .main-menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(148, 148, 158);
+    padding: 0;
+}
+header .main-menu li{
+    display: inline;
+    list-style: none;
+    padding: 3px;
+
+}
+header .main-menu li a {
+    color:rgb(148, 148, 158);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header .main-menu li a:hover {
+    border-top: 2px solid rgb(148, 148, 158);
+}
+.banner {
+    background-image: url(../images/background-img.jpg);
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.banner h1{
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    
+}
+.wrap-block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+   
+}
+.wrap-block div{
+    width:25%;
+    background: red;
+    min-height: 100px;
+    
+    
+}
+/*
+@media (min-width:550px){
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+header nav .menu{
+    flex: 1;
+}
+}*/
