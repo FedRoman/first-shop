@@ -6,7 +6,7 @@ h1 , h2 , h3 , p , div , nav ,header {
 }
 .wrap {
     max-width:980px;
-    margin: auto;
+    margin: 0 auto;
 }
  :root{
     --main-color:black;
@@ -19,10 +19,6 @@ header nav .logo {
     text-align: center;
     font-weight: 900;
 }
-/*.main-logo img{
-    width:100%;
-    height: auto;
-}*/
 .main-logo img {
     width:70px;
     height: auto;
@@ -82,32 +78,42 @@ header .main-menu li a:hover {
     border-top: 2px solid rgb(148, 148, 158);
 }
 .banner {
-    background-image: url(../images/background-img.jpg);
+    background-image: url(../images/bg-main.jpg);
     background-repeat: no-repeat;
-    min-height: 500px;
+    max-width: 100%;
+    height: 500px;
     background-size: cover;
-    background-position: center;
-    position: relative;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
 }
 .banner h1 {
     font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     padding: 10px 20px;
+
     
 }
-.wrap-block {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    
+/*
+.left-block ,
+.center-block , 
+.right-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.wrap-block div {
-    width:100%;
-    height: 120px;
-    background: red;
-    min-height: 150px;
-    text-align: center;
+.left-block button ,
+.center-block button, 
+.right-block button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background: rgb(226, 126, 123);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 10px 0;
 
 }
 .wrap-block img{
@@ -115,6 +121,7 @@ header .main-menu li a:hover {
     width: 100%;
     height: 165px;
 }
+
 @media (min-width:550px){
     .wrap-block {
         width: 100%;
@@ -125,23 +132,52 @@ header .main-menu li a:hover {
     }
     .wrap-block div {
         width:25%; 
-        background: red;
-        min-height: 250px;
+        min-height: 350px;
         text-align: center;
         border: 1px solid black;
         padding: 10px;
     }
+    
 }
 
-
-
-/*
-@media (min-width:550px){
-header nav {
+.middle-text {
+    margin-top: 20px;
+}
+.middle-text p {
+    color: rgb(148, 148, 158);
+    text-align: center;
+    font-family:'Courier Prime', monospace;
+}
+.middle-text h3 {
+    color: rgb(148, 148, 158);
+    font-family:'Courier Prime', monospace;
+    font-size: 2rem;
+    text-align: center;
+}
+.our-offer{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-header nav .menu{
-    flex: 1;
+.type-of-kind-serve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid black;
 }
-}*/
+.our-offer img{
+    width: 50%;
+    border-radius:100%;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.type-of-kind-serve h2{
+    display: inline;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+*/
